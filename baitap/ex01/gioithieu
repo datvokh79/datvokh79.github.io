@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giới thiệu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #e0f7fa;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    nav {
+      background-color: #b2ebf2;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #006064;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    footer {
+      background-color: #e0f7fa;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 14px;
+      margin-top: 30px;
+    }
+
+    img {
+      display: block;
+      margin: 20px auto;
+      max-width: 200px;
+      height: auto;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Giới thiệu khóa học Photoshop</h1>
+    <p>Thông tin về khóa học và người hướng dẫn</p>
+  </header>
+
+  <nav>
+    <a href="trangchu.html">Trang chủ</a>
+    <a href="gioithieu.html">Giới thiệu</a>
+    <a href="thongtin.html">Thông tin</a>
+  </nav>
+
+  <section>
+    <h2>Về khóa học</h2>
+    <p>Khóa học Photoshop cơ bản này được thiết kế dành cho người mới bắt đầu. Bạn sẽ được học từ những công cụ đơn giản nhất đến các kỹ năng thiết kế chuyên nghiệp.</p>
+
+    <h2>Người hướng dẫn</h2>
+    <img src="https://img.lovepik.com/free-png/20211209/lovepik-teacher-png-image_401442346_wh1200.png" alt="Giảng viên Photoshop" width="300">
+    <p>Nguyễn Minh – chuyên gia thiết kế đồ họa với hơn 8 năm kinh nghiệm trong ngành sáng tạo. Anh đã đào tạo hàng trăm học viên thành công, hiện đang làm việc tại một công ty truyền thông lớn.</p>
+
+    <h2>Mục tiêu khóa học</h2>
+    <img src="https://tse4.mm.bing.net/th/id/OIP.CPWxDVJOG0c5Ie9qSBzPCgHaFK?rs=1&pid=ImgDetMain" alt="logo" width="1000">
+
+    <ul>
+      <li>Hiểu rõ giao diện và công cụ cơ bản trong Photoshop</li>
+      <li>Thành thạo các kỹ năng cắt ghép, chỉnh sửa ảnh</li>
+      <li>Thiết kế các sản phẩm thực tế như banner, poster, ảnh quảng cáo</li>
+      <li>Tự tin sáng tạo và làm việc trong lĩnh vực thiết kế</li>
+    </ul>
+  </section>
+
+  <footer>
+    © 2025 Tien Dat WEBSITE – Học Photoshop Online
+  </footer>
+
+</body>
+</html>
