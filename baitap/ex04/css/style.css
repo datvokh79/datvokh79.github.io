@@ -46,6 +46,14 @@ nav a:hover {
     color: #ffeb3b;
 }
 
+ul.software-list {
+    padding-left: 0;
+}
+    
+ul.software-list li {
+    margin-top: 15px;
+}
+
 /* Footer */
 .footer {
     background: linear-gradient(to right, #007acc, #66b3ff);
