@@ -10,7 +10,7 @@ body {
 /* Header */
 .header {
     background: linear-gradient(to right, #007acc, #66b3ff);
-    padding: 20px 30px;
+    padding: 40px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
