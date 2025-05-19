@@ -54,15 +54,11 @@ header nav {
   display: flex;
 }
 
-nav a.current {
+nav a.current,
+header .current {
   color: #ffeb3b;
   border: none;
   background: none;
-}
-
-header .highlight,
-header .current a {
-  color: #ffeb3b;
 }
 
 header a:hover {
@@ -104,3 +100,4 @@ footer {
 ul.software-list li {
   margin-top: 15px;
 }
+
