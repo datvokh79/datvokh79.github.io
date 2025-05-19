@@ -54,6 +54,12 @@ header nav {
   display: flex;
 }
 
+nav a.current {
+  color: #ffeb3b;
+  border: none;
+  background: none;
+}
+
 header .highlight,
 header .current a {
   color: #ffeb3b;
