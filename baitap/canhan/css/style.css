@@ -1,1 +1,113 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #e8f0f5; /* Nền xanh nhạt dịu */
+}
 
+.cv-container {
+  display: flex;
+  max-width: 1000px;
+  margin: 50px auto;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.left-column {
+  width: 35%;
+  background: #34495e;
+  color: white;
+  padding: 30px;
+}
+
+.right-column {
+  width: 65%;
+  padding: 30px;
+  background: #ffffff;
+}
+
+.profile-pic img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid white;
+  display: block;
+  margin: 0 auto 15px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.position {
+  text-align: center;
+  font-style: italic;
+  font-size: 14px;
+  margin-bottom: 30px;
+  color: #bdc3c7;
+}
+
+.section {
+  margin-bottom: 25px;
+}
+
+.section h3, .section h2 {
+  font-size: 18px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  color: #0077cc;
+}
+
+.section p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.skills li {
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+.skills span {
+  display: inline-block;
+  width: 120px;
+}
+
+.bar {
+  background: #ccc;
+  height: 8px;
+  border-radius: 4px;
+  display: inline-block;
+  width: 50%;
+  vertical-align: middle;
+}
+
+.fill {
+  background: #0077cc;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.hobbies li {
+  list-style: none;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+a[target="_blank"] {
+  font-size: 16px;         
+  font-weight: bold;       
+  color: #00BFFF;          
+  text-decoration: none;  
+  transition: color 0.3s ease;
+}
+
+a[target="_blank"]:hover {
+  color: #0077cc;         
+  text-decoration: underline;
+}
