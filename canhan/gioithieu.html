@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Giới thiệu - TienDatPhotography</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
   <header>
@@ -22,7 +24,7 @@
     </div>
   </header>
 
-  <section class="section light">
+  <section class="section light" data-aos="fade-up">
     <div class="container about-box">
       <img src="img/avatar.jpg" alt="Ảnh đại diện">
       <div>
@@ -33,7 +35,7 @@
     </div>
   </section>
 
-  <section class="section">
+  <section class="section" data-aos="fade-right">
     <div class="container">
       <h2>Mục tiêu nghề nghiệp</h2>
       <p>
@@ -42,7 +44,7 @@
     </div>
   </section>
 
-  <section class="section light">
+  <section class="section light" data-aos="fade-left">
     <div class="container">
       <h2>Kỹ năng</h2>
       <ul class="skills">
@@ -54,7 +56,7 @@
     </div>
   </section>
 
-  <section class="section">
+  <section class="section" data-aos="zoom-in">
     <div class="container">
       <h2>Kinh nghiệm cá nhân</h2>
       <ul>
@@ -65,7 +67,7 @@
     </div>
   </section>
 
-  <section class="section light">
+  <section class="section light" data-aos="fade-up">
     <div class="container">
       <h2>Sở thích & Chuyên môn</h2>
       <ul>
@@ -82,5 +84,9 @@
       <p>&copy; 2025 TienDatPhotography. All rights reserved.</p>
     </div>
   </footer>
+
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>
