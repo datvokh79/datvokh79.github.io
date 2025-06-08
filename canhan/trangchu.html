@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TienDatPhotography</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
   <header>
@@ -22,7 +24,7 @@
     </div>
   </header>
 
-  <section id="home" class="hero">
+  <section id="home" class="hero" data-aos="fade-up">
     <div class="overlay">
       <div class="hero-text">
         <h2>Ghi lại cảm xúc bằng ánh sáng</h2>
@@ -31,33 +33,33 @@
     </div>
   </section>
 
-  <section id="about" class="section light">
+  <section id="about" class="section light" data-aos="fade-right">
     <div class="container">
       <h2>Chào mừng đến với TienDatPhotography</h2>
-        <div>
-          <p>
-            Nơi ghi lại từng khoảnh khắc đẹp đẽ và cảm xúc chân thực nhất qua ống kính nghệ thuật.  
-            TienDatPhotography không chỉ là nơi lưu giữ hình ảnh — mà còn là câu chuyện, là cảm hứng,  
-            là nghệ thuật được kể lại bằng ánh sáng và màu sắc.  
-          </p>
-        </div> 
-        <a href="gioithieu.html" class="button_1">Tìm hiểu thêm về tôi</a>
+      <div>
+        <p>
+          Nơi ghi lại từng khoảnh khắc đẹp đẽ và cảm xúc chân thực nhất qua ống kính nghệ thuật.
+          TienDatPhotography không chỉ là nơi lưu giữ hình ảnh — mà còn là câu chuyện, là cảm hứng,
+          là nghệ thuật được kể lại bằng ánh sáng và màu sắc.
+        </p>
+      </div>
+      <a href="gioithieu.html" class="button_1" data-aos="zoom-in">Tìm hiểu thêm về tôi</a>
     </div>
   </section>
 
-  <section id="services" class="section">
+  <section id="services" class="section" data-aos="fade-left">
     <div class="container">
       <h2>Dịch vụ</h2>
       <div class="services-grid">
-        <div class="service-box">
+        <div class="service-box" data-aos="fade-up" data-aos-delay="100">
           <h3>Chụp chân dung</h3>
           <p>Tôn vinh cá tính và cảm xúc thật.</p>
         </div>
-        <div class="service-box">
+        <div class="service-box" data-aos="fade-up" data-aos-delay="200">
           <h3>Chụp sự kiện</h3>
           <p>Lưu giữ trọn vẹn từng khoảnh khắc.</p>
         </div>
-        <div class="service-box">
+        <div class="service-box" data-aos="fade-up" data-aos-delay="300">
           <h3>Ảnh sản phẩm</h3>
           <p>Chuyên nghiệp, rõ nét và sáng tạo.</p>
         </div>
@@ -65,31 +67,31 @@
     </div>
   </section>
 
-  <section id="gallery" class="section light">
+  <section id="gallery" class="section light" data-aos="zoom-in">
     <div class="container">
       <h2>Bộ sưu tập</h2>
       <div class="gallery-grid">
-        <img src="img/IMG_3115.jpg" alt="Gallery">
-        <img src="img/WIN04385.jpg" alt="Gallery">
-        <img src="img/WIN04387.jpg" alt="Gallery">
-        <img src="img/deathnote.jpg" alt="Gallery">
+        <img src="img/IMG_3115.jpg" alt="Gallery" />
+        <img src="img/WIN04385.jpg" alt="Gallery" />
+        <img src="img/WIN04387.jpg" alt="Gallery" />
+        <img src="img/deathnote.jpg" alt="Gallery" />
       </div>
     </div>
   </section>
 
-  <section id="projects" class="section">
+  <section id="projects" class="section" data-aos="fade-up">
     <div class="container">
       <h2>Dự án nổi bật</h2>
       <div class="project-list">
-        <div class="project">
+        <div class="project" data-aos="fade-right" data-aos-delay="100">
           <h3>✨ Concept “Giấc mơ Anime”</h3>
           <p>Chụp theo phong cách cosplay anime với tone pastel, ánh sáng mờ ảo và bố cục lấy cảm hứng từ truyện tranh Nhật Bản.</p>
         </div>
-        <div class="project">
+        <div class="project" data-aos="fade-right" data-aos-delay="200">
           <h3>💍 Ảnh cưới tự nhiên “Mộc mạc mà đẹp”</h3>
           <p>Một bộ ảnh cưới ngoài trời sử dụng ánh sáng tự nhiên, bắt trọn khoảnh khắc và cảm xúc chân thật.</p>
         </div>
-        <div class="project">
+        <div class="project" data-aos="fade-right" data-aos-delay="300">
           <h3>🧴 Quảng bá mỹ phẩm LOCAL BRAND</h3>
           <p>Ảnh sản phẩm tone trắng nhẹ, bố cục gọn gàng, phối cảnh tạo cảm giác cao cấp và hiện đại.</p>
         </div>
@@ -97,32 +99,24 @@
     </div>
   </section>
 
-  <section id="testimonials" class="section light">
+  <section id="testimonials" class="section light" data-aos="fade-up">
     <div class="container">
       <h2>Khách hàng nói gì</h2>
       <div class="testimonials">
-        <blockquote>
-          "Anh Đạt chụp rất tận tâm, hình ảnh chỉnh sửa cực kỳ tinh tế và đúng phong cách tôi mong muốn!" – Lan Phương
-        </blockquote>
-        <blockquote>
-          "Dịch vụ nhanh, chuyên nghiệp và kết quả ngoài mong đợi. Chắc chắn sẽ hợp tác lâu dài." – Minh Khoa
-        </blockquote>
-        <blockquote>
-          "Phong cách làm việc sáng tạo và linh hoạt, đặc biệt là với concept cosplay – rất đáng khen!" – Ngọc Trân
-        </blockquote>
-        <blockquote>
-          "Bộ ảnh của tôi được đầu tư cả về ánh sáng và hậu kỳ. Khi xem lại, cảm giác như được sống lại khoảnh khắc ấy." – Hoàng Tú
-        </blockquote>
+        <blockquote>"Anh Đạt chụp rất tận tâm, hình ảnh chỉnh sửa cực kỳ tinh tế và đúng phong cách tôi mong muốn!" – Lan Phương</blockquote>
+        <blockquote>"Dịch vụ nhanh, chuyên nghiệp và kết quả ngoài mong đợi. Chắc chắn sẽ hợp tác lâu dài." – Minh Khoa</blockquote>
+        <blockquote>"Phong cách làm việc sáng tạo và linh hoạt, đặc biệt là với concept cosplay – rất đáng khen!" – Ngọc Trân</blockquote>
+        <blockquote>"Bộ ảnh của tôi được đầu tư cả về ánh sáng và hậu kỳ. Khi xem lại, cảm giác như được sống lại khoảnh khắc ấy." – Hoàng Tú</blockquote>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="section">
+  <section id="contact" class="section" data-aos="fade-up">
     <div class="container">
       <h2>Liên hệ</h2>
       <form class="contact-form">
-        <input type="text" placeholder="Tên của bạn" required>
-        <input type="email" placeholder="Email" required>
+        <input type="text" placeholder="Tên của bạn" required />
+        <input type="email" placeholder="Email" required />
         <textarea placeholder="Tin nhắn..." required></textarea>
         <button type="submit">Gửi tin nhắn</button>
       </form>
@@ -132,5 +126,15 @@
   <footer>
     <p>&copy; 2025 TienDatPhotography | Designed by Tiến Đạt</p>
   </footer>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true,
+    });
+  </script>
 </body>
 </html>
