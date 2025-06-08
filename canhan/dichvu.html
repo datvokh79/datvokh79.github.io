@@ -2,64 +2,86 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Dịch Vụ - TienDatPhotography</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dịch Vụ | TienDatPhotography</title>
+  <link rel="stylesheet" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
 
+  <!-- Header -->
   <header>
     <div class="container">
       <div class="logo">TienDatPhotography</div>
       <nav>
         <ul>
-          <li><a href="index.html">Trang Chủ</a></li>
-          <li><a href="gioithieu.html">Giới Thiệu</a></li>
-          <li><a href="dichvu.html" class="current">Dịch Vụ</a></li>
-          <li><a href="gallery.html">Thư Viện Ảnh</a></li>
-          <li><a href="lienhe.html">Liên Hệ</a></li>
+          <li><a href="trangchu.html">Trang chủ</a></li>
+          <li><a href="gioithieu.html">Giới thiệu</a></li>
+          <li><a href="dichvu.html" class="active">Dịch vụ</a></li>
+          <li><a href="lienhe.html">Liên hệ</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <section class="section services" id="services">
+  <!-- Dịch vụ -->
+  <section class="section light">
     <div class="container">
-      <h2>Dịch Vụ Chuyên Nghiệp Tại TienDatPhotography</h2>
-      <p style="max-width: 700px; margin: 0 auto 40px; color: #555; text-align: center;">
-        Với kinh nghiệm dày dặn và trang thiết bị hiện đại, tôi cung cấp các dịch vụ nhiếp ảnh đa dạng, đáp ứng nhu cầu cá nhân và doanh nghiệp.
-      </p>
+      <h2>Dịch vụ của tôi</h2>
       <div class="services-grid">
-        <div class="service-box">
-          <h3>Chụp Ảnh Chân Dung</h3>
-          <p>Ghi lại biểu cảm chân thực, tự nhiên nhất cho cá nhân, gia đình, hoặc hồ sơ doanh nghiệp với phong cách sáng tạo và chuyên nghiệp.</p>
+        <div class="service-box" data-aos="fade-up">
+          <i class="fas fa-user fa-2x icon"></i>
+          <h3>Chụp ảnh chân dung</h3>
+          <p>Chân dung cá nhân, ngoại cảnh hoặc studio với phong cách tự nhiên, nhẹ nhàng.</p>
         </div>
-        <div class="service-box">
-          <h3>Chụp Ảnh Sự Kiện</h3>
-          <p>Bắt trọn từng khoảnh khắc quan trọng trong đám cưới, hội nghị, sự kiện công ty hoặc lễ hội đặc biệt, đảm bảo chất lượng và cảm xúc.</p>
+        <div class="service-box" data-aos="fade-up" data-aos-delay="100">
+          <i class="fas fa-box-open fa-2x icon"></i>
+          <h3>Chụp ảnh sản phẩm</h3>
+          <p>Hình ảnh sản phẩm đẹp, bố cục chuẩn, giúp thương hiệu nổi bật và thu hút khách hàng.</p>
         </div>
-        <div class="service-box">
-          <h3>Chụp Ảnh Quảng Cáo & Thương Hiệu</h3>
-          <p>Tạo dựng hình ảnh chuyên nghiệp cho sản phẩm và thương hiệu của bạn với các bộ ảnh quảng cáo độc đáo và ấn tượng.</p>
+        <div class="service-box" data-aos="fade-up" data-aos-delay="200">
+          <i class="fas fa-lightbulb fa-2x icon"></i>
+          <h3>Chụp ảnh concept</h3>
+          <p>Tư vấn & thực hiện concept theo yêu cầu: cosplay, vintage, cổ trang, thời trang, v.v.</p>
         </div>
-        <div class="service-box">
-          <h3>Chụp Ảnh Phong Cảnh & Du Lịch</h3>
-          <p>Khám phá và ghi lại vẻ đẹp thiên nhiên, thành phố và con người trong các chuyến đi với góc nhìn nghệ thuật và tinh tế.</p>
+        <div class="service-box" data-aos="fade-up" data-aos-delay="300">
+          <i class="fas fa-wand-magic-sparkles fa-2x icon"></i>
+          <h3>Chỉnh sửa & Retouch</h3>
+          <p>Chỉnh sửa ánh sáng, màu sắc, da mặt… bằng Photoshop và Lightroom chuyên nghiệp.</p>
         </div>
-        <div class="service-box">
-          <h3>Chỉnh Sửa Ảnh Chuyên Nghiệp</h3>
-          <p>Cung cấp dịch vụ hậu kỳ chỉnh sửa ảnh kỹ thuật số, cân chỉnh màu sắc, retouch để nâng cao chất lượng hình ảnh.</p>
+        <div class="service-box" data-aos="fade-up" data-aos-delay="400">
+          <i class="fas fa-pen-nib fa-2x icon"></i>
+          <h3>Thiết kế đồ họa</h3>
+          <p>Thiết kế poster, banner, social media content mang đậm dấu ấn cá nhân và thương hiệu.</p>
+        </div>
+        <div class="service-box" data-aos="fade-up" data-aos-delay="500">
+          <i class="fas fa-video fa-2x icon"></i>
+          <h3>Quay & dựng video</h3>
+          <p>Video ngắn, giới thiệu sản phẩm, cá nhân, hậu kỳ sáng tạo trên CapCut/Premiere.</p>
+        </div>
+        <div class="service-box" data-aos="fade-up" data-aos-delay="600">
+            <i class="fas fa-camera-retro fa-2x icon"></i>
+            <h3>Chụp ảnh sự kiện</h3>
+            <p>Ghi lại khoảnh khắc tại tiệc sinh nhật, lễ kỷ niệm, sự kiện công ty với góc chụp sáng tạo, cảm xúc.</p>
+        </div>
+        <div class="service-box" data-aos="fade-up" data-aos-delay="700">
+            <i class="fas fa-laptop-code fa-2x icon"></i>
+            <h3>Tư vấn truyền thông</h3>
+            <p>Hỗ trợ định hình phong cách hình ảnh, nội dung truyền thông phù hợp với cá nhân hoặc thương hiệu.</p>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Footer -->
   <footer>
-    <div class="container">
-      <p>© 2025 TienDatPhotography. Bản quyền thuộc về TienDat.</p>
-    </div>
+    <p>&copy; 2025 TienDatPhotography. All rights reserved.</p>
   </footer>
 
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>
