@@ -73,6 +73,28 @@ nav ul li a:hover {
   color: #f39c12;
 }
 
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: color 0.3s, background-color 0.3s;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+nav ul li a:hover {
+  color: #f39c12;
+  background-color: #fef5e6;
+}
+
+nav ul li a.active {
+  color: #fff;
+  background-color: #e67e22;
+  box-shadow: 0 4px 8px rgba(230, 126, 34, 0.5);
+  font-weight: 700;
+  cursor: default;
+}
+
 /* ====== Hero Section ====== */
 .hero {
   background: url('https://source.unsplash.com/1600x800/?photography') no-repeat center center/cover;
@@ -112,6 +134,16 @@ nav ul li a:hover {
   color: #444;
 }
 
+.avatar-center {
+  display: block;
+  margin: 0 auto 30px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover; 
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
 /* ====== About Section ====== */
 .about-box {
   display: flex;
@@ -120,7 +152,7 @@ nav ul li a:hover {
   align-items: center;
 }
 
-.about-box img {
+.about-box img:not(.avatar-center) {
   border-radius: 10px;
   width: 300px;
   height: auto;
@@ -185,6 +217,7 @@ nav ul li a:hover {
   color: #333;
 }
 
+
 /* ====== Testimonials Section ====== */
 .testimonials blockquote {
   background: #fff;
@@ -235,6 +268,143 @@ nav ul li a:hover {
 
 .contact-form button:hover {
   background: #f39c12;
+}
+
+.skills {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills li {
+  margin-bottom: 20px;
+}
+
+.service-box {
+  background: linear-gradient(to bottom right, #ffffff, #fef5ed);
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+}
+
+.service-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 36px rgba(243, 156, 18, 0.3);
+}
+
+.service-box .icon {
+  color: #e67e22;
+  margin-bottom: 20px;
+}
+
+.service-box h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: #e67e22;
+}
+
+.service-box p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.skills span {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.bar {
+  background-color: #e0e0e0;
+  border-radius: 30px;
+  overflow: hidden;
+  height: 20px;
+}
+
+.bar .fill {
+  background-color: #00bcd4; /* màu xanh cyan tươi sáng */
+  height: 100%;
+  width: 0;
+  border-radius: 30px;
+  transition: width 1s ease-in-out;
+}
+
+/* Tùy chọn hiệu ứng khi load */
+.skills li:hover .fill {
+  filter: brightness(1.1);
+}
+
+/* ====== Contact Info & Social Links ====== */
+.contact-info {
+  max-width: 600px;
+  margin: 40px auto 20px;
+  font-size: 1.1rem;
+  color: #333;
+  text-align: center;
+}
+
+.contact-info h3 {
+  color: #e67e22;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.contact-info p {
+  margin: 8px 0;
+  line-height: 1.5;
+}
+
+.contact-info a {
+  color: #f39c12;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+  color: #e67e22;
+  text-decoration: underline;
+}
+
+.social-links {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.social-links h3 {
+  color: #e67e22;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 0 15px;
+  color: #333;
+  transition: color 0.3s ease, transform 0.3s ease;
+  font-size: 2.4rem; /* lớn hơn chút so với font-awesome fa-2x */
+}
+
+.social-links a:hover {
+  color: #f39c12;
+  transform: translateY(-5px);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .contact-info {
+    font-size: 1rem;
+  }
+  .social-links a {
+    margin: 0 10px;
+    font-size: 2rem;
+  }
 }
 
 /* ====== Footer ====== */
