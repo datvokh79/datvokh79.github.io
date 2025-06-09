@@ -9,7 +9,7 @@ body {
   font-family: 'Poppins', sans-serif;
   line-height: 1.6;
   color: #222;
-  background-color: #f9f9f9;
+  background: linear-gradient(135deg, #ffe6cc, #ffcccb, #fff2b2);
   scroll-behavior: smooth;
 }
 
@@ -32,6 +32,10 @@ body {
 
 .light {
   background-color: #f4f4f4;
+}
+
+.section.light {
+  background-color: #f9fbfd;
 }
 
 /* ====== Header ====== */
@@ -66,25 +70,22 @@ nav ul {
 nav ul li a {
   color: #333;
   text-decoration: none;
-  transition: color 0.3s;
-}
-
-nav ul li a:hover {
-  color: #f39c12;
-}
-
-nav ul li a {
-  color: #333;
-  text-decoration: none;
   padding: 8px 12px;
-  transition: color 0.3s, background-color 0.3s;
   border-radius: 4px;
   display: inline-block;
+  transition: color 0.3s, background-color 0.3s;
 }
 
-nav ul li a:hover {
+nav ul li a:hover,
+nav ul li a:focus {
   color: #f39c12;
   background-color: #fef5e6;
+  outline: none;
+}
+
+nav ul li a:focus-visible {
+  outline: 2px solid #f39c12;
+  outline-offset: 2px;
 }
 
 nav ul li a.active {
@@ -126,7 +127,7 @@ nav ul li a.active {
 .hero-text h2 {
   font-size: 3rem;
   margin-bottom: 1rem;
-  color: #f39c12;
+  color: #e67e22;
 }
 
 .hero-text p {
@@ -167,20 +168,38 @@ nav ul li a.active {
 }
 
 .service-box {
-  background: #fff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 5px 20px rgba(230, 126, 34, 0.2);
+  background: linear-gradient(to bottom right, #ffffff, #fef5ed);
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
   text-align: center;
-  transition: transform 0.3s;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
   color: #333;
   border: 1px solid #eee;
 }
 
 .service-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 30px rgba(243, 156, 18, 0.5);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 36px rgba(243, 156, 18, 0.3);
   border-color: #f39c12;
+}
+
+.service-box .icon {
+  color: #e67e22;
+  margin-bottom: 20px;
+}
+
+.service-box h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: #e67e22;
+}
+
+.service-box p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
 }
 
 /* ====== Gallery Section ====== */
@@ -216,7 +235,6 @@ nav ul li a.active {
   box-shadow: 0 2px 10px rgba(230, 126, 34, 0.2);
   color: #333;
 }
-
 
 /* ====== Testimonials Section ====== */
 .testimonials blockquote {
@@ -266,10 +284,13 @@ nav ul li a.active {
   transition: background 0.3s;
 }
 
-.contact-form button:hover {
+.contact-form button:hover,
+.contact-form button:focus {
   background: #f39c12;
+  outline: none;
 }
 
+/* ====== Skills Section ====== */
 .skills {
   list-style: none;
   padding: 0;
@@ -278,38 +299,6 @@ nav ul li a.active {
 
 .skills li {
   margin-bottom: 20px;
-}
-
-.service-box {
-  background: linear-gradient(to bottom right, #ffffff, #fef5ed);
-  padding: 40px 30px;
-  border-radius: 15px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
-  text-align: center;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  position: relative;
-}
-
-.service-box:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 36px rgba(243, 156, 18, 0.3);
-}
-
-.service-box .icon {
-  color: #e67e22;
-  margin-bottom: 20px;
-}
-
-.service-box h3 {
-  font-size: 1.4rem;
-  margin-bottom: 15px;
-  color: #e67e22;
-}
-
-.service-box p {
-  font-size: 1rem;
-  color: #555;
-  line-height: 1.6;
 }
 
 .skills span {
@@ -334,7 +323,6 @@ nav ul li a.active {
   transition: width 1s ease-in-out;
 }
 
-/* Tùy chọn hiệu ứng khi load */
 .skills li:hover .fill {
   filter: brightness(1.1);
 }
@@ -366,9 +354,11 @@ nav ul li a.active {
   transition: color 0.3s ease;
 }
 
-.contact-info a:hover {
+.contact-info a:hover,
+.contact-info a:focus {
   color: #e67e22;
   text-decoration: underline;
+  outline: none;
 }
 
 .social-links {
@@ -388,23 +378,14 @@ nav ul li a.active {
   margin: 0 15px;
   color: #333;
   transition: color 0.3s ease, transform 0.3s ease;
-  font-size: 2.4rem; /* lớn hơn chút so với font-awesome fa-2x */
+  font-size: 2.4rem;
 }
 
-.social-links a:hover {
+.social-links a:hover,
+.social-links a:focus {
   color: #f39c12;
   transform: translateY(-5px);
-}
-
-/* Responsive */
-@media (max-width: 600px) {
-  .contact-info {
-    font-size: 1rem;
-  }
-  .social-links a {
-    margin: 0 10px;
-    font-size: 2rem;
-  }
+  outline: none;
 }
 
 /* ====== Footer ====== */
@@ -426,5 +407,15 @@ footer {
   nav ul {
     flex-direction: column;
     gap: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-info {
+    font-size: 1rem;
+  }
+  .social-links a {
+    margin: 0 10px;
+    font-size: 2rem;
   }
 }
